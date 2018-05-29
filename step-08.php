@@ -33,7 +33,7 @@ function getRandomInt(max) {
 		</div>
 		<div>
 			Input: <input type="text" id="guess" name="name" value="0">
-			<input onclick="verify()" class="siimple-btn siimple-btn--grey" value="Submit">
+			<input onclick="verify();" class="siimple-btn siimple-btn--grey" value="Submit">
 		</div>
 	</div>
   </div>
@@ -44,7 +44,7 @@ function verify(){
 	if(document.getElementById("guess").value === random.toString()){
 		 document.getElementById("content").innerHTML = "Current input is: <span class=\"siimple-tag siimple-tag--green\">" + document.getElementById("guess").value.toString() + "</span><br><br><div class=\"siimple-btn siimple-btn--blue\"><a href=\"step-09.php\">Next</a></div>";
 	 }else{
-		 document.getElementById("content").innerHTML = "Current input is: <span class=\"siimple-tag siimple-tag--orange\">" + document.getElementById("guess").value.toString() + "</span><br><br><a href="https://getmantra.com/web-app-security-testing-with-browsers/#opendevtools" target="_blank"><div class="siimple-btn siimple-btn--navy">Learn how to do it.</div></a>";
+		 document.getElementById("content").innerHTML = "Current input is: <span class=\"siimple-tag siimple-tag--orange\">" + document.getElementById("guess").value.toString() + "</span><br><br><a href=\"https://getmantra.com/web-app-security-testing-with-browsers/#opendevtools\" target=\"_blank\"><div class=\"siimple-btn siimple-btn--navy\">Learn how to do it.</div></a>";
 	 }
 }
 
